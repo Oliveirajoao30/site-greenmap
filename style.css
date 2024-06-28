@@ -1,0 +1,326 @@
+body {
+  margin: 0;
+  font-family:'Times New Roman', Times, serif;
+  background-color: rgb(6, 158, 14);
+}
+
+.accordion {
+  background-color: rgb(104, 211, 104);
+  color: black;
+  padding: 15px;
+  width: 36%;
+  margin: auto;
+  
+  border: 2px solid white;
+  border-radius: 30px;
+  
+  text-align: left;
+  font-size: 15px;
+  display: flex;
+  margin-top: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: rgb(247, 244, 244) 1px 1px 1px;
+}
+.active, .accordion:hover {
+  background-color: #84dd0f; 
+}
+.panel {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 0 16px;
+  display: none;
+  background-color: rgb(255, 252, 252);
+  overflow: hidden;
+  width: 47%;
+  border-radius: 30px;
+}
+
+#menu{
+  margin-left:60px;
+  display: flex;
+  justify-content: center;
+  background-color:  rgb(6, 158, 14);
+  text-shadow: black 1px 1px 1px;
+}
+.logo{
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  margin: 10px;
+}
+.titulo{
+  font-size: 70px;
+  margin: 10px;
+  color: #2b8a43;
+  height: 90px;
+  margin-top: 30px;
+  text-shadow: #f2f2f2 1px 1px 1px;
+}
+
+footer{
+ display: flex;
+ justify-content: space-between ; 
+ margin-right: 1790px;
+padding: 5px;
+}
+#midias{
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: white 0px 1px 2px;
+  margin-left: 5px;
+  padding: 5px;
+}
+.contato{
+  display: flexbox;
+  margin-left: 115px;
+  padding-left: 100px;
+  position: relative;
+  top: -26px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: white 0px 1px 2px;
+  
+}
+
+#lg{
+  position: relative;
+  top: -100px;
+  margin-left: 750px;
+  
+}
+.sub{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+display: flex;
+
+
+}
+
+#sub{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.slide > .coluna {
+  padding: 30px;
+  
+}
+
+.slide:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.coluna {
+  float: left;
+  width: 25%;
+  
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 3px 3px 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 1px 18px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.horizontal-menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(6, 158, 14);
+  text-shadow: black 1px 1px 1px;
+}
+
+.horizontal-menu ul li {
+  margin:  9px;
+}
+
+.horizontal-menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #033f0b;
+  color: white;
+  transition: left 0.3s;
+  z-index: 1000;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 20px;
+}
+
+.sidebar nav ul li {
+  margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+.redes{
+  display: flex;
+  gap: 5px;
+  
+  
+}
+#galeria{
+  text-shadow: #fefefe 1px 1px 1px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fatos{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: #45834d 1px 1px 1px;
+  display: flexbox;
+  margin: 100px;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px;
+  display: inline-block;
+}
+.natureza{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: #45834d 1px 1px 1px;
+  display: flexbox;
+  margin: 100px;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px;
+  display: inline-block;
+}
+.sobre{
+  display: flex;
+  border: 2px solid black;
+  padding: 30px;
+  gap: 30px;
+  margin-left: 300px;
+  margin: 100px;
+}
+#midias{
+  margin-top: 90px;
+}
+.contato{
+  margin-top: -4px;
+  
+
+}
